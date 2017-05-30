@@ -1,8 +1,21 @@
 @import "bootstrap";
 
+body {
+  background: image_url('symphony.png');
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
+}
+
+h1 {
+  font-family: "MEgalopolis Extra", "Verdana", "Gill Sans", "Lucida Grande", "Arial", "Helvetica", sans-serif;
+}
+
+.navbar {
+  background: image_url('zig_zag_wool.png');
+  box-shadow: 0px 1px 3px #2a2a2a;
 }
 
 .booyah-box {
