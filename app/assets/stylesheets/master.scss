@@ -14,8 +14,17 @@ h1 {
 }
 
 .navbar {
+
   background: image_url('zig_zag_wool.png');
   box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #3cc47c;
+  font-family: "Lobster 13", cursive; font-size: 1.135em;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-size: 26px;
 }
 
 .booyah-box {
