@@ -18,6 +18,15 @@ h1 {
   font-family: "MEgalopolis Extra", "Verdana", "Gill Sans", "Lucida Grande", "Arial", "Helvetica", sans-serif;
 }
 
+a {
+  color: #cd88f0;
+}
+
+a:hover {
+  color: #9263ab;
+  text-decoration: none;
+}
+
 h2 {
   font-size: 24px;
 }
@@ -29,18 +38,23 @@ h2 {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #3cc47c;
-  font-family: "Lobster 13", cursive; font-size: 1.135em;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  font-size: 26px;
+  color: #cd88f0;
+  font-family: Papyrus, fantasy;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #9263ab;
 }
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff;
+  background: #f3f3f3;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
@@ -49,13 +63,12 @@ h2 {
 }
 
 .btn-primary {
-  background-color: #3cc47c;
-  border-color: #3cc47c;
+  background-color: #cd88f0;
+  border-color: #cd88f0;
 }
 
 .help-block {
-  color: #3cc47c;
-  background-color: #1e392a;
+  color: #cd88f0;
   border-radius: 3px;
   padding: 2px 8px 2px 8px;
 }
@@ -83,4 +96,34 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  margin: auto;
+}
+
+.container {
+  background-color: #f3f3f3;
+  margin-top: 20px;
+}
+
+.carousel-caption {
+  font-family: "MEgalopolis Extra", "Verdana", "Gill Sans", "Lucida Grande", "Arial", "Helvetica", sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  font-family: "MEgalopolis Extra", "Verdana", "Gill Sans", "Lucida Grande", "Arial", "Helvetica", sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #9263ab;
+  border-color: #9263ab;
 }
