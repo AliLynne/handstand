@@ -99,8 +99,10 @@ blockquote p {
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  max-height: 550px;
-  margin: auto;
+  object-fit: cover;
+  height: auto;
+  margin: 0;
+  width: 100%;
 }
 
 .container {
@@ -115,8 +117,8 @@ blockquote p {
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
+  position: absolute;
   left: 0;
-  right: 0;
 }
 
 .navbar {
@@ -126,4 +128,8 @@ blockquote p {
 .btn-primary:hover {
   background-color: #9263ab;
   border-color: #9263ab;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
