@@ -70,7 +70,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
+
         <%= f.button :submit, "Sign up", class: 'btn btn-primary' %>
       </div>
         <% end %>
@@ -93,4 +93,10 @@
   </div>
 
 </div>
+<% end %>
+<div class="clear"></div>
+<%= simple_form_for @photo, url: '#' do |f| %>
+  <%= f.input :caption %>
+
+  <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
 <% end %>
