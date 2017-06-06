@@ -42,22 +42,24 @@
   </div>
 </div>
 
+<div class="row">
 
 <div class="col-10 offset-1">
-<h1 class="float-left">Comments</h1>
-
-<!-- Button trigger modal -->
+  <h1 class="float-left">Comments</h1>
+<!-- Button trigger modal (comments) -->
 <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal">
   Add a Comment
 </button>
 
-<div class="clear"></div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal-2">
+
+<!-- Button trigger modal (photos) -->
+<button type="button" id="photobutton" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal-2">
   Add a Photo
 </button>
-<!-- Modal -->
+</div>
+
+<!-- Comments Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -105,7 +107,7 @@
 
 
 
-<!-- Modal -->
+<!-- Photos Modal -->
 <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
