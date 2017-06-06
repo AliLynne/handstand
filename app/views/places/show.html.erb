@@ -79,7 +79,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-        <%= f.button :submit, "Sign up", class: 'btn btn-primary' %>
+        <%= f.button :submit, "Save", class: 'btn btn-primary' %>
       </div>
         <% end %>
     </div>
@@ -99,9 +99,10 @@
       <small><%= comment.user.email %></small>
     </blockquote>
   </div>
-
+  <% end %>
 </div>
-<% end %>
+
+
 <div class="clear"></div>
 
 
@@ -121,10 +122,6 @@
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
           <%= f.input :picture %>
           <%= f.input :caption %>
-
-
-
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -135,10 +132,22 @@
     </div>
   </div>
 </div>
-<div class="clear"></div>
-<% @place.photos.each do |photo| %>
-  <div class="booyah-box">
-    <%= image_tag photo.picture %>
-    <%= photo.caption %>
+
+
+<div class="row">
+  <div class="col-10 offset-1">
+    <h1 class="float-left">Photos</h1>
   </div>
-<% end %>
+</div>
+
+<div class="clear"></div>
+<div class="row">
+  <% @place.photos.each do |photo| %>
+  <div class="col-12 col-sm-6">
+    <div class="booyah-box">
+      <%= image_tag photo.picture, class: 'img-fluid' %>
+      <%= photo.caption %>
+    </div>
+  </div>
+  <% end %>
+</div>
