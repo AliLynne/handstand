@@ -1,6 +1,10 @@
 @import "bootstrap";
 @import "font-awesome";
 
+html {
+  font-size: 100%;
+}
+
 .clear {
   clear: both;
 }
@@ -28,7 +32,7 @@ a:hover {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 .navbar {
@@ -112,7 +116,7 @@ blockquote p {
 
 .carousel-caption {
   font-family: "MEgalopolis Extra", "Verdana", "Gill Sans", "Lucida Grande", "Arial", "Helvetica", sans-serif;
-  font-size: 60px;
+  font-size: 3.75em;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
   background-color: rgba(0, 0, 0, 0.5);
